@@ -40,7 +40,7 @@ class Owner
   end
   def feed_cats
    Cat.all.each {|cat|cat.mood ="happy"}
-     binding.pry
+     #binding.pry
   end
   def sell_pets
   pet_dog = Dog.new
