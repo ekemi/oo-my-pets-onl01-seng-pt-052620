@@ -42,8 +42,8 @@ class Owner
    Cat.all.each {|cat|cat.mood ="happy"}
   end
   def sell_pets
-  pet_dog = Dog.new 
-  pet_cat = Cat.new 
+  pet_dog = Dog.new
+  pet_cat = Cat.new
   pet = pet_cat + pet_dog
   binding.pry
   end
