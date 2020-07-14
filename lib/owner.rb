@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   # code goes here
 #  attr_accessor :name
@@ -41,6 +42,9 @@ class Owner
    Cat.all.each {|cat|cat.mood ="happy"}
   end
   def sell_pets
-  Dog.all.each{|dog|dog.owner.clear}
+  pet_dog = Dog.new 
+  pet_cat = Cat.new 
+  pet = pet_cat + pet_dog
+  binding.pry
   end
 end
